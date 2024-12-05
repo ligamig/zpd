@@ -1,5 +1,4 @@
 body {
-  background-color: powderblue;
    font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(174,112,161,255);
 
@@ -19,9 +18,8 @@ input[type=text], input[type=parole] {
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+  text-align: right;
 }
-
-
 
 hr {
   border: 1px solid rgba(240,207,52,255);
@@ -65,6 +63,123 @@ a {
 }
 
 .button1 {
-	
- 
+	padding: 30px;
+	font-size:12px;
+  background-color: rgba(243,210,55,255);
+  color: black;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-color: black;
+  border-radius: 5px;
+  width: 57px;
+  height: 57px;
+}
+
+.calendar {
+  width: 380px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.monthYear {
+  text-align: center;
+  font-weight: 600;
+  width: 150px;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  color: #999FA6;
+  font-weight: 500;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.date:hover,
+.date.active {
+  background-color: #ff5869;
+  color: #fff;
+}
+
+.date.inactive {
+  color: #fff;
+}
+}
+.color-switch {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-switch div {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.color-switch div:hover {
+  transform: scale(1.2);
 }

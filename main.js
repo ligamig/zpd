@@ -21,11 +21,6 @@ const updateCalendar = () => {
 
     let datesHTML = '';
 
-    for(let i = firstDayIndex; i > 0; i--) {
-        const prevDate = new Date(currentYear,currentMonth, 0 - i + 1);
-        datesHTML += `<div class="date inactive">${prevDate.getDate()}</date`;
-    }
-
     for(let i = 1; i <= totalDays; i++) {
         const date = new Date(currentYear,currentMonth, i);
         const activeClass = date.toDateString() === new Date().toDateString() ? 'active' : '';
@@ -41,8 +36,14 @@ const updateCalendar = () => {
 }
 
 prevBtn.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    updateCalendar();  
+})
+
+nextBtn.addEventListener('click', () => {
     currentDate.setMonth(currentDate.getMonth() + 1);
     updateCalendar();  
 })
 
 updateCalendar();
+

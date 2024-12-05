@@ -4,14 +4,18 @@
 <head>
 	<title>Pieslēgšanās</title>
 	<link rel="stylesheet" href="stils.css">
+
+	<script>
+		function myFunction() {
+		  document.getElementById("demo").innerHTML = "Paragraph changed.";
+		}
+		</script>
 </head>
-	
 
 <body>
 <h1>Pieslēgšanās</h1>
 <hr>
-	<center>
-<form action="">
+	<form action="">
 		<label for="first">
 			<b>Lietotājvārds:</b>
 		</label>
@@ -27,15 +31,17 @@
 		</br></br>
 		<input type="parole" id="parole" name="parole"
 			placeholder="Ievadi savu paroli" required>
-	</center>
+
 			<br>
 			<br>
 			<hr>
-		 <button type="submit" class="submitbtn">Iesniegt</button>
-	</div>
+		 <button type="submit" class="submitbtn"><b>Iesniegt</b></button>
+
+	<div class="container signin">
 	<input type="checkbox"
 	value="lsRememberMe"
-	id="rememberMe"> 
+	id="rememberMe">
+	
 		<label
 	for="rememberMe">Atcerēties mani</label>
 	</form>
@@ -45,7 +51,7 @@
 			Izveidot profilu
 		</a>
 	</p>
-	
+	</div>
 </body>
 
 </html>
