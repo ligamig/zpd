@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(174,112,161,255);
+}
+
+.calendar-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month-switch button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.month-switch button:hover {
+    background: #0056b3;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.day:hover {
+    background: #ccc;
+}
+
+.color-switch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color.selected {
+    border-color: black;
+}
+
+.color-label {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -5px;
+}
