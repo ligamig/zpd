@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Calendar with Color Switch</title>
+        <link rel="stylesheet" href="kale.css">
+    </head>
+
+    <body>
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="month-switch">
+                    <button id="prev-month">&lt;</button>
+                    <span id="month-year"></span>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <div class="days" id="days"></div>
+            </div>
+            <div class="color-switch" id="color-switch">
+                <h3>Mood Switch</h3>
+                <div>
+                    <div class="color" style="background: red;" data-color="red"></div>
+                    <div class="color-label">Very Good</div>
+                </div>
+                <div>
+                    <div class="color" style="background: blue;" data-color="blue"></div>
+                    <div class="color-label">Good</div>
+                </div>
+                <div>
+                    <div class="color" style="background: green;" data-color="green"></div>
+                    <div class="color-label">Normal</div>
+                </div>
+                <div>
+                    <div class="color" style="background: yellow;" data-color="yellow"></div>
+                    <div class="color-label">Bad</div>
+                </div>
+                <div>
+                    <div class="color" style="background: purple;" data-color="purple"></div>
+                    <div class="color-label">Very Bad</div>
+                </div>
+            </div>
+        </div>
+            
+        <script src="ka.js"></script>
+    </body>
+</html>    

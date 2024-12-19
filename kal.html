@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="kale.css">
+        <title>Color Calendar</title>
+    </head>
+    
+    <body>
+        <div class="navigation">
+            <button onclick="previousMonth()">&lt;</button>
+            <span id="monthLabel" class="month-label">Month Year</span>
+            <button onclick="nextMonth()">&gt;</button>
+        </div>
+        <div class="calendar" id="calendar"></div>
+        <div class="color-switch">
+            <button style="background-color: red;" onclick="selectColor('red')"></button>
+            <button style="background-color: green;" onclick="selectColor('green')"></button>
+            <button style="background-color: blue;" onclick="selectColor('blue')"></button>
+            <button style="background-color: yellow;" onclick="selectColor('yellow')"></button>
+            <button style="background-color: pink;" onclick="selectColor('pink')"></button>
+        </div>
+    </body>
+
+</html>
